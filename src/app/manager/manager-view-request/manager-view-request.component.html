@@ -1,0 +1,25 @@
+<div class="container">
+    <br />
+
+    <table class="table table-bordered table-striped table">
+        <thead>
+            <tr>
+                <th>Customer Name</th>
+                <th>Phone Number</th>
+                <th>Address</th>
+                <th>Loan Type</th>
+                <th>Loan Amount</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let patientList of this.patientService.request">
+                <td>{{ patientList.CustomerName }}</td>
+                <td>{{ patientList.PhoneNumber }}</td>
+                <td>{{ patientList.Address }}</td>
+                <td>{{ patientList.LoanType }}</td>
+                <td>{{ patientList.LoanAmount }}</td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
